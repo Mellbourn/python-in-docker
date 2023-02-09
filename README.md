@@ -1,5 +1,19 @@
 # Python/Flask Tutorial for Visual Studio Code
 
+## Klas findings
+
+don't use run tasks, they don't work
+don't try to debug, getting <https://github.com/microsoft/vscode-docker/issues/3823>
+
+Do this
+
+```bash
+docker-compose build --no-cache --force-rm --pull
+docker-compose up
+```
+
+## original
+
 * This sample contains the completed program from the tutorial, make sure to visit the link: [Using Flask in Visual Studio Code](https://code.visualstudio.com/docs/python/tutorial-flask). Intermediate steps are not included.
 
 * It also contains the *Dockerfile* and *uwsgi.ini* files necessary to build a container with a production server. The resulting image works both locally and when deployed to Azure App Service. See [Deploy Python using Docker containers](https://code.visualstudio.com/docs/python/tutorial-deploy-containers).
