@@ -100,7 +100,7 @@
       "name": "Docker: Python - Flask",
       "type": "docker",
       "request": "launch",
-      "preLaunchTask": "docker-run: debug",
+      "preLaunchTask": "docker-run: debug4",
       "python": {
         "pathMappings": [
           {
